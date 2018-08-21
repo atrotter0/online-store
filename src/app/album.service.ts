@@ -15,11 +15,11 @@ export class AlbumService {
     return this.albums;
   }
 
-  getAlbumById(albumId: number) {
-    // for (let i = 0; i < ALBUMS.length; i++) {
-    //   if (ALBUMS[i].id === albumId) {
-    //     return ALBUMS[i];
-    //   }
-    // }
+  addAlbum(newAlbum: Album) {
+    this.albums.push(newAlbum);
+  }
+
+  getAlbumById(albumId: string) {
+    return this.database.object('albums/' + albumId);
   }
 }
