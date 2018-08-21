@@ -16,10 +16,10 @@ export class AlbumService {
   }
 
   getAlbumById(albumId: number) {
-    for (let i = 0; i < ALBUMS.length; i++) {
-      if (ALBUMS[i].id === albumId) {
-        return ALBUMS[i];
-      }
-    }
+    // for (let i = 0; i < ALBUMS.length; i++) {
+    //   if (ALBUMS[i].id === albumId) {
+    //     return ALBUMS[i];
+    //   }
+    // }
   }
 }
